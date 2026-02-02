@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Av. Mehmet Yılmaz - Hukuk ve Danışmanlık</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-blue': '#0f172a', // Koyu lacivert (Güven rengi)
+                        'gold-accent': '#c5a059', // Altın rengi detaylar
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-serif text-2xl text-navy-blue font-bold tracking-tight">Av. Mehmet Yılmaz</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hakkimda" class="text-gray-600 hover:text-navy-blue transition">Hakkımda</a>
+                    <a href="#uzmanliklar" class="text-gray-600 hover:text-navy-blue transition">Uzmanlık Alanları</a>
+                    <a href="#blog" class="text-gray-600 hover:text-navy-blue transition">Makaleler</a>
+                    <a href="#iletisim" class="text-gray-600 hover:text-navy-blue transition">İletişim</a>
+                </div>
+                <div>
+                    <a href="#iletisim" class="hidden md:inline-block bg-navy-blue text-white px-6 py-2.5 rounded-sm hover:bg-slate-800 transition duration-300 font-medium text-sm">
+                        Randevu Al
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 lg:pt-48 lg:pb-32 px-4 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-sm font-semibold tracking-widest text-gray-500 uppercase mb-4">Profesyonel Hukuki Destek</p>
+                <h1 class="font-serif text-5xl lg:text-6xl text-navy-blue leading-tight mb-6">
+                    Sizin İçin Adalet,<br> 
+                    <span class="italic text-gray-600">Güvenilir</span> Çözümler.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
+                    Aile hukuku, gayrimenkul davaları ve şirket danışmanlığı alanlarında 15 yılı aşkın tecrübe ile haklarınızı en güçlü şekilde savunuyoruz.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#iletisim" class="bg-navy-blue text-white px-8 py-4 rounded-sm hover:bg-slate-800 transition shadow-lg">
+                        Danışmanlık Alın
+                    </a>
+                    <a href="#uzmanliklar" class="border border-gray-300 px-8 py-4 rounded-sm hover:bg-gray-50 transition text-navy-blue">
+                        Hizmetlerimiz
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-4 -right-4 w-full h-full border-2 border-gray-200 rounded-sm z-0"></div>
+                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Avukat Profil Fotoğrafı" class="relative z-10 w-full h-auto rounded-sm shadow-2xl object-cover grayscale hover:grayscale-0 transition duration-700">
+            </div>
+        </div>
+    </header>
+
+    <section id="uzmanliklar" class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-16">
+                <h2 class="font-serif text-4xl text-navy-blue mb-4">Uzmanlık Alanlarım</h2>
+                <div class="w-20 h-1 bg-gray-300"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 border border-gray-100 hover:border-gray-300 hover:shadow-lg transition duration-300 bg-slate-50 group">
+                    <h3 class="font-serif text-2xl text-navy-blue mb-4 group-hover:text-blue-900">Aile Hukuku</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Boşanma, velayet, nafaka ve mal paylaşımı davalarında hassas ve sonuç odaklı hukuki süreç yönetimi.
+                    </p>
+                    <a href="#" class="text-sm font-bold text-navy-blue border-b border-navy-blue pb-1 hover:text-gray-600">Devamını Oku →</a>
+                </div>
+
+                <div class="p-8 border border-gray-100 hover:border-gray-300 hover:shadow-lg transition duration-300 bg-slate-50 group">
+                    <h3 class="font-serif text-2xl text-navy-blue mb-4 group-hover:text-blue-900">Ticaret Hukuku</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Şirket kuruluşları, birleşme ve devralmalar, ticari sözleşmeler ve şirketler hukuku danışmanlığı.
+                    </p>
+                    <a href="#" class="text-sm font-bold text-navy-blue border-b border-navy-blue pb-1 hover:text-gray-600">Devamını Oku →</a>
+                </div>
+
+                <div class="p-8 border border-gray-100 hover:border-gray-300 hover:shadow-lg transition duration-300 bg-slate-50 group">
+                    <h3 class="font-serif text-2xl text-navy-blue mb-4 group-hover:text-blue-900">Ceza Hukuku</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Soruşturma ve kovuşturma aşamalarında şüpheli, sanık veya mağdur vekilliği hizmetleri.
+                    </p>
+                    <a href="#" class="text-sm font-bold text-navy-blue border-b border-navy-blue pb-1 hover:text-gray-600">Devamını Oku →</a>
+                </div>
+
+                 <div class="p-8 border border-gray-100 hover:border-gray-300 hover:shadow-lg transition duration-300 bg-slate-50 group">
+                    <h3 class="font-serif text-2xl text-navy-blue mb-4 group-hover:text-blue-900">Gayrimenkul Hukuku</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Tapu iptal ve tescil davaları, kira uyuşmazlıkları, kamulaştırma ve inşaat hukuku süreçleri.
+                    </p>
+                    <a href="#" class="text-sm font-bold text-navy-blue border-b border-navy-blue pb-1 hover:text-gray-600">Devamını Oku →</a>
+                </div>
+
+                 <div class="p-8 border border-gray-100 hover:border-gray-300 hover:shadow-lg transition duration-300 bg-slate-50 group">
+                    <h3 class="font-serif text-2xl text-navy-blue mb-4 group-hover:text-blue-900">İş Hukuku</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        İşe iade davaları, kıdem ve ihbar tazminatları, iş kazası ve meslek hastalığı davaları.
+                    </p>
+                    <a href="#" class="text-sm font-bold text-navy-blue border-b border-navy-blue pb-1 hover:text-gray-600">Devamını Oku →</a>
+                </div>
+
+                 <div class="p-8 border border-gray-100 hover:border-gray-300 hover:shadow-lg transition duration-300 bg-slate-50 group">
+                    <h3 class="font-serif text-2xl text-navy-blue mb-4 group-hover:text-blue-900">Miras Hukuku</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Vasiyetname hazırlama, mirasçılık belgesi alma, tenkis ve muris muvazaası davaları.
+                    </p>
+                    <a href="#" class="text-sm font-bold text-navy-blue border-b border-navy-blue pb-1 hover:text-gray-600">Devamını Oku →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hakkimda" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                 <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Avukat Ofisi" class="rounded-sm shadow-xl grayscale hover:grayscale-0 transition duration-500">
+            </div>
+            <div>
+                <h4 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">Deneyim & Güven</h4>
+                <h2 class="font-serif text-4xl text-navy-blue mb-6">Mehmet Yılmaz ile Tanışın</h2>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    İstanbul Üniversitesi Hukuk Fakültesi'nden 2008 yılında mezun olan Mehmet Yılmaz, hukuki kariyerine uluslararası bir hukuk bürosunda başlamıştır.
+                </p>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Müvekkil odaklı yaklaşımı ve analitik düşünme yapısı ile karmaşık hukuki süreçleri basitleştirerek çözüme kavuşturmayı hedefler. Şeffaflık ve dürüstlük, meslek hayatının temel taşlarıdır.
+                </p>
+                <div class="flex items-center gap-8 mt-8 border-t border-gray-200 pt-8">
+                    <div>
+                        <span class="block text-4xl font-serif text-navy-blue font-bold">15+</span>
+                        <span class="text-sm text-gray-500">Yıllık Deneyim</span>
+                    </div>
+                    <div>
+                        <span class="block text-4xl font-serif text-navy-blue font-bold">500+</span>
+                        <span class="text-sm text-gray-500">Başarılı Dava</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="iletisim" class="bg-navy-blue text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="font-serif text-2xl mb-6">Av. Mehmet Yılmaz</h3>
+                <p class="text-slate-400 leading-relaxed">
+                    Hukuki süreçlerinizde yanınızdayız. Profesyonel destek almak için bizimle iletişime geçin.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">İletişim</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li>📍 Büyükdere Cad. No:123, Levent / İstanbul</li>
+                    <li>📞 +90 (212) 123 45 67</li>
+                    <li>✉️ info@mehmetyilmaz.av.tr</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Hızlı Menü</h4>
+                <ul class="space-y-2 text-slate-400">
+                    <li><a href="#" class="hover:text-white transition">Ana Sayfa</a></li>
+                    <li><a href="#" class="hover:text-white transition">Hakkımda</a></li>
+                    <li><a href="#" class="hover:text-white transition">Hizmetler</a></li>
+                    <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+            &copy; 2024 Av. Mehmet Yılmaz Hukuk Bürosu. Tüm hakları saklıdır.
+        </div>
+    </footer>
+
+</body>
+</html>
