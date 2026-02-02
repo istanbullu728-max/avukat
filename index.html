@@ -191,6 +191,14 @@
             &copy; 2024 Av. Mehmet Yılmaz Hukuk Bürosu. Tüm hakları saklıdır.
         </div>
     </footer>
-
+<script>
+  // Şifre sıfırlama veya davet linkiyle gelindiğinde widget'ı otomatik açar
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash.includes('invite_token') || window.location.hash.includes('recovery_token')) {
+      window.netlifyIdentity.open();
+    }
+  });
+</script>
 </body>
+
 </html>
